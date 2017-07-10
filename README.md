@@ -6,7 +6,7 @@ Build an application people can use to track any stats they want about themselve
 
 You are going to build an application to track personal statistics about their activities. A personal statistic is a numerical record for a person in a time series by day. For example, let's say you wanted to track how many flights of stairs you walked up in a day. A sample week might look like:
 
-
+![Sample tracker picture.](https://github.com/rickmurdock/stat-tracker/blob/master/readmePics/sample.png)
 
 Users of your application can create as many different activities to track as they want.
 
