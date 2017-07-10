@@ -18,7 +18,7 @@ For your API, we have specified the endpoints you'll need and what they should d
 
 All the endpoints require authentication. You can use JSON Web Tokens for authentication, or if you prefer, you can use HTTP Basic Authentication. Feel free to use [Passport](http://passportjs.org/) to make this part easier.
 
-
+![Endpoints picture.](https://github.com/rickmurdock/stat-tracker/blob/master/readmePics/endpoints.png)
 
 ### Hard mode  
 
