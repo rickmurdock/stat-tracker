@@ -16,9 +16,19 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiUmljayIsImlhdCI6MTUwMDIyOTYwNCw
 Build an application people can use to track any stats they want about themselves on a daily basis.
 
 You are going to build an application to track personal statistics about their activities. A personal statistic is a numerical record for a person in a time series by day. For example, let's say you wanted to track how many flights of stairs you walked up in a day. A sample week might look like:
-
-![Sample tracker picture.](https://github.com/rickmurdock/stat-tracker/blob/master/readmePics/sample.png)
-
+ 
+  
+| Date |	Flights |
+| --- | --- |
+| 06/19/2017	| 8 |
+| 06/20/2017	| 6 |
+| 06/21/2017	| 7 |
+| 06/22/2017	| 6 |
+| 06/23/2017	| 8 |
+| 06/24/2017	| 4 |
+| 06/25/2017	| 6 |
+ 
+  
 Users of your application can create as many different activities to track as they want.
 
 You will be building an API to create and serve this data backed by MongoDB.
