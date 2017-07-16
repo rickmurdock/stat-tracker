@@ -1,5 +1,5 @@
-var express = require("express");
-var apiRouter = express.Router();
+const express = require("express");
+const apiRouter = express.Router();
 const Activity = require("../models/Activity");
 
 

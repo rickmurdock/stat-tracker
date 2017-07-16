@@ -2,16 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 mongoose.Promise = require("bluebird");
 const bodyParser = require("body-parser");
-var apiRouter = require("./routes/apiRoutes");
-var loginRouter = require("./routes/loginRoutes");
-var checkAuth = require("./middleware/checkAuth");
-var jwt = require('jsonwebtoken');
-// Require the config file containing the key to sign the JWT.
-var jwtConfig = require('./jwtConfig.js');
+const apiRouter = require("./routes/apiRoutes");
+const loginRouter = require("./routes/loginRoutes");
+const checkAuth = require("./middleware/checkAuth");
 const app = express();
 const port = process.env.port || 8010;
 const dbURL = "mongodb://localhost:27017/statTracker";
-//const Activity = require("./models/Activity");
+const Activity = require("./models/Activity");
 
 // MIDDLEWARE
 app.use(bodyParser.json());
