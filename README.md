@@ -2,6 +2,17 @@
 
 The Iron Yard Weekly Project: Stat Tracker
 
+---
+
+Token testing info for Postman header -
+
+key: x-access-token
+
+value:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiUmljayIsImlhdCI6MTUwMDIyOTYwNCwiZXhwIjoxNTAwMzE2MDA0fQ.lY_RyBijWnV6p_DnBkLTq32UYBGQTRzY3hM_eGbjHds
+
+---
+
 Build an application people can use to track any stats they want about themselves on a daily basis.
 
 You are going to build an application to track personal statistics about their activities. A personal statistic is a numerical record for a person in a time series by day. For example, let's say you wanted to track how many flights of stairs you walked up in a day. A sample week might look like:
