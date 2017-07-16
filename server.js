@@ -2,7 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 mongoose.Promise = require("bluebird");
 const bodyParser = require("body-parser");
-var api = require("./routes/api");
+var apiRouter = require("./routes/apiRoutes");
+var loginRouter = require("./routes/loginRoutes");
+var checkAuth = require("./middleware/checkAuth");
 var jwt = require('jsonwebtoken');
 // Require the config file containing the key to sign the JWT.
 var jwtConfig = require('./jwtConfig.js');
@@ -23,10 +25,6 @@ mongoose.connect(dbURL).then(function(err, db) {
   console.log("connected to statTracker DB.");
 });
 
-let user = "Rick";
-let password = "pass";
-
-
 // let newActivity = new Activity({"name": "walking", "type": "exercise" });
 // newActivity.save();
 
@@ -38,9 +36,8 @@ let password = "pass";
 
 
 // ROUTES
-// app.use("/api", checkAuth, api);
-app.use("/api", api);
-
+app.use("/login", loginRouter);
+app.use("/api", checkAuth, apiRouter);
 
 // LISTENER
 app.listen(port, () => {
