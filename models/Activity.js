@@ -12,7 +12,8 @@ var activitySchema = new Schema({
   tracker: [
     {
       date: {
-        type: Date
+        type: String,
+        default: Date()
       },
       count: {
         type: Number,
